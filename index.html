@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DHK - Devakamma Home Kitchen</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">DHK - Devakamma Home Kitchen</h1>
+        </nav>
+    </header>
+
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-container">
+            <div class="menu-item">
+                <h3>Biryani</h3>
+                <p>Delicious homemade biryani.</p>
+                <p>₹250</p>
+                <button onclick="addToOrder('Biryani', 250)">Order Now</button>
+            </div>
+            <div class="menu-item">
+                <h3>Chicken Curry</h3>
+                <p>Authentic and flavorful chicken curry.</p>
+                <p>₹200</p>
+                <button onclick="addToOrder('Chicken Curry', 200)">Order Now</button>
+            </div>
+            <div class="menu-item">
+                <h3>Paneer Butter Masala</h3>
+                <p>Rich and creamy paneer dish.</p>
+                <p>₹180</p>
+                <button onclick="addToOrder('Paneer Butter Masala', 180)">Order Now</button>
+            </div>
+            <div class="menu-item">
+                <h3>Chapati</h3>
+                <p>Soft and fresh chapatis.</p>
+                <p>₹20 each</p>
+                <button onclick="addToOrder('Chapati', 20)">Order Now</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="order">
+        <h2>Your Order</h2>
+        <ul id="order-list"></ul>
+        <p id="total">Total: ₹0</p>
+        <button onclick="placeOrder()">Place Order</button>
+    </section>
+
+    <footer>
+        <p>© 2024 Devakamma Home Kitchen. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
